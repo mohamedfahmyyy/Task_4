@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const currentFilePath = fileURLToPath(import.meta.url);
 const repoRoot = path.resolve(path.dirname(currentFilePath), '..', '..');
 
-const SERVER_PORT = process.env.TEST_SERVER_PORT || '4100';
+const SERVER_PORT = process.env.TEST_SERVER_PORT || '4000';
 const serverOrigin = `http://127.0.0.1:${SERVER_PORT}`;
 const apiBaseUrl = `${serverOrigin}/api`;
 
